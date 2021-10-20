@@ -135,7 +135,9 @@ categories.forEach(e =>{
         <th scope="row">${e.sn}</th>
         <td>${e.categoryName}</td>
         <td>${e.numberOfPolls}</td> 
-        <td><span><img src="./images/border_color_24px_outlined.svg" alt="" class="px-2"></span> <span><img src="./images/visibility_24px.png" alt="" class="px-2"></span></t d>
+        <td><span><a href="#edit-category" class=" text-decoration-none" data-bs-toggle="modal" data-bs-target=".edit-category"><img src="./images/border_color_24px_outlined.svg"
+        alt=""></a></span>
+<span><a href="#"><img src="./images/visibility_24px.png" alt=""></a></span></t d>
     </tr>
 
     `

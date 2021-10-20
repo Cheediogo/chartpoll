@@ -10,7 +10,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/admin_nav_side_bar.css">
-    <link rel="stylesheet" href="css/catmssg-admin.css">
+    <link rel="stylesheet" href="css/catmssg-poll.css">
 </head>
 <body>
     <!-- SIDEBAR MOBILE -->
@@ -129,7 +129,7 @@
         <div class="container">
             <!-- search and message button -->
             <div class="search d-flex justify-content-between">
-                <div class=""> <button class="btn btn-polls mt-2 p-2 mssgbtn  ">Send Messages</button></div>
+                <div class=""><a href="#send-message" class=" text-decoration-none "data-bs-toggle="modal" data-bs-target="#send-message"> <button class="btn btn-polls mt-2 p-2 mssgbtn">Send Messages</button></a></div>
                
                 <div class="ask"><input type="search" name="search" class=" mt-2 p-2" id="search" placeholder="search"></div>
             </div> 
@@ -367,7 +367,41 @@
           </div>
     </main>
     </div>
-
+    <div class="modal fade" id="send-message" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="SendMessageLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="  modal-content modal-cnt d-flex align-items-center flex-column justify-content-between align-content-center">
+           <div class="" style="background: #EEEEEE80;">
+            <div class="modal-body text-center">
+                <div class="d-flex pb-4 border rounded px-4 pt-2 bg-white border-dark">
+                     <p class=" me-1 border rounded-pill px-2 py-1" style="background: #C4C4C4;">Mary Spencer <a href="#"><img src="./images/clear_24px.png" width="15px" alt="Cancel"></a></p>
+                     <p class=" me-1 border rounded-pill px-2 py-1" style="background: #C4C4C4;">Mary Spencer <a href="#"><img src="./images/clear_24px.png" width="15px" alt="Cancel"></a></p>
+                     <p class=" me-1 border rounded-pill px-2 py-1" style="background: #C4C4C4;">Mary Spencer <a href="#"><img src="./images/clear_24px.png" width="15px" alt="Cancel"></a></p>
+                     <p class=" me-1 border rounded-pill px-2 py-1" style="background: #C4C4C4;">Mary Spencer <a href="#"><img src="./images/clear_24px.png" width="15px" alt="Cancel"></a></p>
+                     <p class="me-1 border rounded-pill px-2" style="background: #C4C4C4;">Mary Spencer <a href="#"><img src="./images/clear_24px.png" width="15px" alt="Cancel"></a></p>
+                </div>
+                <div class="d-md-none">
+                    <div class="d-flex py-1 justify-content-center align-items-baseline">
+                        <p class="pe-1">Send messeage to all users</p>
+                       <div class=""> <input type="checkbox" name="" id=""></div>
+                    </div>
+                </div>
+                <div class=" d-none d-md-block">
+                    <div class="d-flex py-1 justify-content-end align-items-baseline">
+                        <p class="pe-1">Send messeage to all users</p>
+                       <div class=""> <input type="checkbox" name="" id=""></div>
+                    </div>
+                </div>
+                <div ><textarea name="" class="rounded" id=""  rows="9" style="resize: none; width: 100%;"></textarea></div>
+             </div>
+             <div class="d-flex w-100 gap-1 py-3  justify-content-center mx-3 ">
+                 <div class="w-50"><input class="form-control border-dark" type="text" placeholder="Type a message"></div>
+                 <div class=""><a href="#"><img src="./images/image_24px.png" width="40px" alt="add image"></a></div>
+                 <button type="submit" class="btn next-link border-primary  text-white" data-bs-dismiss="modal" style="width: 150px;">Send</button>
+             </div>
+           </div>
+        </div>
+        </div>
+    </div>
     <script src="script/script.js"></script>
     <script src="script/bootstrap.min.js"></script>
 </body>

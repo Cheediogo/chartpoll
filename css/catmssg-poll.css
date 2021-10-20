@@ -290,4 +290,20 @@ background-color:rgba(238, 238, 238, 0.507);
     
 }
   
-  
+/* Modal */
+.modal-cnt{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+}
+
+.mod-btn1{
+  width: 180px;
+}
+
+.btn-c2{
+  background-color: #ec1c24;
+  color: white !important;
+  border: 1px solid #000000;
+  width: 180px;
+  box-shadow:  0px 2px 2px rgba(0, 0, 0.25);
+}
