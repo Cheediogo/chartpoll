@@ -28,7 +28,6 @@
     border: 1px solid black;
     border-collapse: collapse;
 }
-
 tfoot{
     border: 0;
 } */
@@ -76,3 +75,19 @@ thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td
     background: #09174B;
     ;
 }
+
+@media screen and (max-width: 480px) {
+  
+  
+    .large-chart{
+    display: none;
+    }
+  }
+  @media screen and (min-width: 480px) {
+  
+  .small-chart{
+    display:none
+  }
+  
+  }
+© 2021 GitHub, I

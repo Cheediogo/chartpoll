@@ -151,6 +151,12 @@
     width: 150px;
   
   }
+
+  .btn-dark-category:hover, .btn-light-category:hover{
+    color: #ffffff;
+    background: #031145;
+  }
+  
   .btn-light-category{
     color: #1E79A1;
     background-color: #ffffff;
