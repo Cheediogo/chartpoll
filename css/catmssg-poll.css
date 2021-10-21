@@ -122,12 +122,13 @@ background-color:rgba(238, 238, 238, 0.507);
 }
 .chat-care .chat-body2{
   background-color: #ffefcd;
+  
 }
 .chat-care .chat-body{
     display: inline-block;
     max-width: 100%;
     padding: 10px;
-    margin-top: 40px;
+    margin-top: 56px;
     border-top-left-radius: 20px;
     border-radius: 20px;
 }
@@ -170,6 +171,55 @@ background-color:rgba(238, 238, 238, 0.507);
   margin-left: 79px;
   width: 200px;
   border-radius: 10px;
+}
+.chat-popup {
+  display: none;
+  
+}
+
+.three-dots:after {
+  cursor: pointer;
+  color: #000;
+  content: '\2807';
+  font-size: 20px;
+  padding: 0 5px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+a div {
+  padding: 2px;
+}
+
+.dropdown {
+  position: absolute;
+  right: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 3px 3px #fff;
+  outline: none;
+  opacity: 0;
+  z-index: -1;
+  max-height: 0;
+  transition: opacity 0.1s, z-index 0.1s  max-height 5s;
+}
+
+.dropdown-container:focus {
+  outline: none;
+}
+
+.dropdown-container:focus .dropdown {
+  opacity: 1;
+  z-index: 100;
+  max-height: 100vh;
+  transition: opacity 0.2s, z-index 0.2s, max-height 0.2s;
 }
 /* cat and mssg */
 #search{
@@ -260,7 +310,7 @@ background-color:rgba(238, 238, 238, 0.507);
     left: 0;
   }
   
-  @media (max-width:769px) {
+  @media (max-width:767px) {
     /* sidebar */
     .side-br{
         display: none !important;
@@ -270,9 +320,24 @@ background-color:rgba(238, 238, 238, 0.507);
     }
     /* cat&mssg */
     .ask{
-       
-      margin-right: 90px;  
+       margin-right: 40px;  
    }
+   .chat-care1{
+    position: fixed;
+  }
+  .chat-popup {
+    display: none;
+     /* position: fixed; */
+     position: absolute;
+    bottom: 60;
+    top: 60;
+    }
+    .chat-care{
+     
+      height: 350px;
+     
+  }
+   
     
 }
     /* cat$mssg */
@@ -286,7 +351,12 @@ background-color:rgba(238, 238, 238, 0.507);
        
        margin-left: 78px;  
     }
-    
+   
+      .chat-care{
+       
+        height: 350px;
+       
+    }
     
 }
   

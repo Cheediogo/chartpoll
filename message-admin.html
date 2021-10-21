@@ -135,10 +135,10 @@
             </div> 
             <!-- chat-body -->
             <div class="row justify-content-center">
-                <div class=" col-md-5 border mx-4 g-0 p-2 chat-care1 mt-2">
+                <div class="col col-md-5 col-sm-8 border mx-4 g-0 p-2 chat-care1 mt-2">
                     <ul class="chat">
                         <li>
-                            <a href="" class="text-underline-hover text-black">
+                            <a class="text-underline-hover text-black " onclick="openChat()">
                                 <div class="card mb-3 rounded" style="max-width: 540px;">
                                     <div class="row g-0">
                                         
@@ -162,7 +162,8 @@
                            
                         </li>
                         <li>
-                            <a href="" class="text-underline-hover text-black">
+                            <a class="text-underline-hover text-black " onclick="openChat()">
+                               
                                 <div class="card mb-3 rounded" style="max-width: 540px;">
                                     <div class="row g-0">
                                         
@@ -186,7 +187,8 @@
                            
                         </li>
                         <li>
-                            <a href="" class="text-underline-hover text-black">
+                            <a class="text-underline-hover text-black" onclick="openChat()">
+                                
                                 <div class="card mb-3 rounded" style="max-width: 540px;">
                                     <div class="row g-0">
                                         
@@ -210,7 +212,8 @@
                            
                         </li>
                         <li>
-                            <a href="" class="text-underline-hover text-black">
+                            <a class="text-underline-hover text-black" onclick="openChat()">
+                               
                                 <div class="card mb-3 rounded" style="max-width: 540px;">
                                     <div class="row g-0">
                                         
@@ -234,7 +237,8 @@
                            
                         </li>
                         <li>
-                            <a href="" class="text-underline-hover text-black">
+                            <a class="text-underline-hover text-black" onclick="openChat()">
+                               
                                 <div class="card mb-3 rounded" style="max-width: 540px;">
                                     <div class="row g-0">
                                         
@@ -263,145 +267,171 @@
                       
                 </div>
                 <!-- chat-body2 -->
-                  <div class="col-md-5 gx-0 gy-0 ">
-                      <div class="card card-top mt-2">
-                          <div class="card-header text-start">
-                              <span>
-                                 <img src="./images/Mask Group (1).png" alt="Agent"> <span><strong class=" font text-black p-2">Tom Crusie Anthony</strong> </span>
-                              </span>
-                          </div>
-                          <div class="card-body chat-care">
-                              <ul class="chat">
-                                  <li class="float-start text-align-left clearfix">
-                                      <span class="chat-img float-start clearfix mx-2">
-                                          <img src="./images/Mask Group (1).png" alt="Agent" class="img-circle" />
-                                      </span>
-                                      <div class="chat-body chat-body1 rounded-bottom rounded-end rounded-4">
-                                          <div class="header clearfix">
-                                              <strong class=" font text-black">Tom Crusie Anthony</strong> 
-                                                  
-                                          </div>
-                                          <p class="font">
-                                            Hello, Admin i am here to report that my poll result
-                                            is not displaying the total number of votes that is
-                                            expected, what should i do, or can you send me the
-                                            result for the poll here.
-                                           
-                                          </p>
-                                      </div>
-                                      <small class="right text-muted"><span class="glyphicon glyphicon-time"></span>11:54am | Monday 7th</small>
-                                  </li>
-                                  <li class="admin clearfix">
-                                      <span class="chat-img float-end clearfix  mx-5">
-                                          <img src="./images/Mask Group (1).png" alt="Admin" class="img-circle" />
-                                      </span>
-                                      <div class="chat-body chat-body2 rounded-bottom rounded-start rounded-4">
-                                          <div class="header clearfix">
+                <div id="myForm" class="col col-md-5 col-sm-8 gx-0 gy-0 chat-popup ">
+                 <form action="">
+                    
+                        <div class="card card-top mt-2">
+                            <div class="card-header text-start">
+                                <div class="d-flex justify-content-between">
+                                    <div><span>
+                                        <img src="./images/Mask Group (1).png" alt="Agent"> <span><strong class=" font text-black p-2">Tom Crusie Anthony</strong> </span>
+                                     </span></div>
+                                    <div>
+                                </div>
+                                <div class="dropdown-container" tabindex="-1">
+                                    <div class="three-dots"></div>
+                                    <div class="dropdown">
+                                      <a onclick="closeChat()"><div>Close</div></a>
+                                      <a href="#"><div>Delete</div></a>
+                                      
+                                    </div>
+                                  </div>
+                                </div>
+                                
+
+                            </div>
+                            <div class="card-body chat-care">
+                                <ul class="chat">
+                                    <li class="float-start text-align-left clearfix">
+                                        <span class="chat-img float-start clearfix mx-2">
+                                            <img src="./images/Mask Group (1).png" alt="Agent" class="img-circle" />
+                                        </span>
+                                        <div class="chat-body chat-body1 rounded-bottom rounded-end rounded-4">
+                                            <div class="header clearfix">
+                                                <strong class=" font text-black">Tom Crusie Anthony</strong> 
+                                                    
+                                            </div>
+                                            <p class="font">
+                                              Hello, Admin i am here to report that my poll result
+                                              is not displaying the total number of votes that is
+                                              expected, what should i do, or can you send me the
+                                              result for the poll here.
                                              
-                                              <strong class="float-end font text-black">Tom Crusie Anthony</strong>
-                                          </div>
-                                          <p class="font">
-                                            Hello, Admin i am here to report that my poll result
-                                            is not displaying the total number of votes that is
-                                            expected, what should i do, or can you send me the
-                                            result for the poll here.
-                                            
-                                          </p>
-                                          
-                                      </div>
-                                      <small class="left text-muted"><span class="glyphicon glyphicon-time"></span>11:54am | Monday 7th</small>
-                                  </li>
-                                  <li class="float-start text-align-left clearfix">
-                                      <span class="chat-img float-start clearfix mx-2">
-                                          <img src="./images/Mask Group (1).png" alt="Agent" class="img-circle" />
-                                      </span>
-                                      <div class="chat-body chat-body1 rounded-bottom rounded-end rounded-4">
-                                          <div class="header">
-                                              <strong class="font text-black">Tom Crusie Anthony</strong>
-                                                 
-                                          </div>
-                                          <p class="font">
-                                            Hello, Admin i am here to report that my poll result
-                                            is not displaying the total number of votes that is
-                                            expected, what should i do, or can you send me the
-                                            result for the poll here.
-                                           
-                                          </p>
-                                      </div>
-                                      <small class="float-end text-muted"><span class="glyphicon glyphicon-time"></span>11:54am | Monday 7th</small>
-                                  </li>
-                                  <li class="admin clearfix">
-                                      <span class="chat-img float-end clearfix  mx-5">
-                                          <img src="./images/Mask Group (1).png" alt="Admin" class="img-circle" />
-                                      </span>
-                                      <div class="chat-body chat-body2 rounded-bottom rounded-start rounded-4">
-                                          <div class="header clearfix">
+                                            </p>
+                                        </div>
+                                        <small class="right text-muted"><span class="glyphicon glyphicon-time"></span>11:54am | Monday 7th</small>
+                                    </li>
+                                    <li class="admin clearfix">
+                                        <span class="chat-img float-end clearfix  mx-5">
+                                            <img src="./images/Mask Group (1).png" alt="Admin" class="img-circle" />
+                                        </span>
+                                        <div class="chat-body chat-body2 rounded-bottom rounded-start rounded-4">
+                                            <div class="header clearfix">
+                                               
+                                                <strong class="float-end font text-black">Tom Crusie Anthony</strong>
+                                            </div>
+                                            <p class="font">
+                                              Hello, Admin i am here to report that my poll result
+                                              is not displaying the total number of votes that is
+                                              expected, what should i do, or can you send me the
+                                              result for the poll here.
                                               
-                                              <strong class="float-end font">Tom Crusie Anthony</strong>
-                                          </div>
-                                          <p class="font">
-                                            Hello, Admin i am here to report that my poll result
-                                            is not displaying the total number of votes that is
-                                            expected, what should i do, or can you send me the
-                                            result for the poll here.
-                                           
+                                            </p>
                                             
-                                          </p>
-                                      </div>
-                                      <small class="left text-muted"><span class="glyphicon glyphicon-time"></span>11:54am | Monday 7th</small>
-                                  </li>
-                              </ul>
-                          </div>
-                          <div class="card-footer">
-                              <div class="input-group">
-                                  <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message" />
-                                  <span class="input-group-btn">
-                                      <button class="btn btn-primary btn-polls" id="btn-chat">
-                                          Send</button>
-                                  </span>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+                                        </div>
+                                        <small class="left text-muted"><span class="glyphicon glyphicon-time"></span>11:54am | Monday 7th</small>
+                                    </li>
+                                    <li class="float-start text-align-left clearfix">
+                                        <span class="chat-img float-start clearfix mx-2">
+                                            <img src="./images/Mask Group (1).png" alt="Agent" class="img-circle" />
+                                        </span>
+                                        <div class="chat-body chat-body1 rounded-bottom rounded-end rounded-4">
+                                            <div class="header">
+                                                <strong class="font text-black">Tom Crusie Anthony</strong>
+                                                   
+                                            </div>
+                                            <p class="font">
+                                              Hello, Admin i am here to report that my poll result
+                                              is not displaying the total number of votes that is
+                                              expected, what should i do, or can you send me the
+                                              result for the poll here.
+                                             
+                                            </p>
+                                        </div>
+                                        <small class="float-end text-muted"><span class="glyphicon glyphicon-time"></span>11:54am | Monday 7th</small>
+                                    </li>
+                                    <li class="admin clearfix">
+                                        <span class="chat-img float-end clearfix  mx-5">
+                                            <img src="./images/Mask Group (1).png" alt="Admin" class="img-circle" />
+                                        </span>
+                                        <div class="chat-body chat-body2 rounded-bottom rounded-start rounded-4">
+                                            <div class="header clearfix">
+                                                
+                                                <strong class="float-end font">Tom Crusie Anthony</strong>
+                                            </div>
+                                            <p class="font">
+                                              Hello, Admin i am here to report that my poll result
+                                              is not displaying the total number of votes that is
+                                              expected, what should i do, or can you send me the
+                                              result for the poll here.
+                                             
+                                              
+                                            </p>
+                                        </div>
+                                        <small class="left text-muted"><span class="glyphicon glyphicon-time"></span>11:54am | Monday 7th</small>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <div class="input-group">
+                                    <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message " />
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-primary btn-polls" type="submit" id="btn-chat">
+                                            Send</button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    
+                 </form>
+                </div> 
               </div>
           </div>
     </main>
     </div>
-    <div class="modal fade" id="send-message" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="SendMessageLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-        <div class="  modal-content modal-cnt d-flex align-items-center flex-column justify-content-between align-content-center">
+    <div class="modal fade g-0" id="send-message" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="SendMessageLabel" aria-hidden="true">
+        <div class=" modal-dialog modal-lg modal-dialog-centered  w-85">
+        <div class="  modal-content modal-cnt d-flex  align-items-center flex-column justify-content-between align-content-center">
            <div class="" style="background: #EEEEEE80;">
             <div class="modal-body text-center">
-                <div class="d-flex pb-4 border rounded px-4 pt-2 bg-white border-dark">
-                     <p class=" me-1 border rounded-pill px-2 py-1" style="background: #C4C4C4;">Mary Spencer <a href="#"><img src="./images/clear_24px.png" width="15px" alt="Cancel"></a></p>
-                     <p class=" me-1 border rounded-pill px-2 py-1" style="background: #C4C4C4;">Mary Spencer <a href="#"><img src="./images/clear_24px.png" width="15px" alt="Cancel"></a></p>
-                     <p class=" me-1 border rounded-pill px-2 py-1" style="background: #C4C4C4;">Mary Spencer <a href="#"><img src="./images/clear_24px.png" width="15px" alt="Cancel"></a></p>
-                     <p class=" me-1 border rounded-pill px-2 py-1" style="background: #C4C4C4;">Mary Spencer <a href="#"><img src="./images/clear_24px.png" width="15px" alt="Cancel"></a></p>
-                     <p class="me-1 border rounded-pill px-2" style="background: #C4C4C4;">Mary Spencer <a href="#"><img src="./images/clear_24px.png" width="15px" alt="Cancel"></a></p>
-                </div>
-                <div class="d-md-none">
-                    <div class="d-flex py-1 justify-content-center align-items-baseline">
-                        <p class="pe-1">Send messeage to all users</p>
-                       <div class=""> <input type="checkbox" name="" id=""></div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col">
+                            <div class="d-flex pb-1 border rounded px-1 pt-2 bg-white align-items-center justify-content-center border-dark flex-wrap">
+                                <p class=" me-1 border  rounded-pill px-1 py-1 " style="background: #C4C4C4;">Mary Spencer <a href="#"><img src="./images/clear_24px.png" width="15px" alt="Cancel"></a></p>
+                                <p class=" me-1 border rounded-pill px-2 py-1" style="background: #C4C4C4;">Mary Spencer <a href="#"><img src="./images/clear_24px.png" width="15px" alt="Cancel"></a></p>
+                                <p class=" me-1 border rounded-pill px-2 py-1" style="background: #C4C4C4;">Mary Spencer <a href="#"><img src="./images/clear_24px.png" width="15px" alt="Cancel"></a></p>
+                                <p class=" me-1 border rounded-pill px-2 py-1" style="background: #C4C4C4;">Mary Spencer <a href="#"><img src="./images/clear_24px.png" width="15px" alt="Cancel"></a></p>
+                                <p class="me-1 border rounded-pill px-2" style="background: #C4C4C4;">Mary Spencer <a href="#"><img src="./images/clear_24px.png" width="15px" alt="Cancel"></a></p>
+                           </div>
+                           <div class="d-md-none">
+                               <div class="d-flex py-1 justify-content-center align-items-baseline">
+                                   <p class="pe-1">Send messeage to all users</p>
+                                  <div class=""> <input type="checkbox" name="" id=""></div>
+                               </div>
+                           </div>
+                           <div class=" d-none d-md-block">
+                               <div class="d-flex py-1 justify-content-end align-items-baseline">
+                                   <p class="pe-1">Send messeage to all users</p>
+                                  <div class=""> <input type="checkbox" name="" id=""></div>
+                               </div>
+                           </div>
+                           <div ><textarea name="" class="rounded" id=""  rows="9" style="resize: vertical; width: 100%; height: 107px;"></textarea></div>
+                        </div>
+                        <div class="d-flex w-100 gap-1 py-3  justify-content-center mx-3 flex-wrap">
+                            <div class="w-50"><input class="form-control border-dark" type="text" placeholder="Type a message"></div>
+                            <div class=""><a href="#"><img src="./images/image_24px.png" width="40px" alt="add image"></a></div>
+                            <button type="submit" class="btn next-link border-primary  text-white" data-bs-dismiss="modal" style="width: 150px;">Send</button>
+                        </div>
+                        </div>
                     </div>
                 </div>
-                <div class=" d-none d-md-block">
-                    <div class="d-flex py-1 justify-content-end align-items-baseline">
-                        <p class="pe-1">Send messeage to all users</p>
-                       <div class=""> <input type="checkbox" name="" id=""></div>
-                    </div>
-                </div>
-                <div ><textarea name="" class="rounded" id=""  rows="9" style="resize: none; width: 100%;"></textarea></div>
-             </div>
-             <div class="d-flex w-100 gap-1 py-3  justify-content-center mx-3 ">
-                 <div class="w-50"><input class="form-control border-dark" type="text" placeholder="Type a message"></div>
-                 <div class=""><a href="#"><img src="./images/image_24px.png" width="40px" alt="add image"></a></div>
-                 <button type="submit" class="btn next-link border-primary  text-white" data-bs-dismiss="modal" style="width: 150px;">Send</button>
-             </div>
+                
            </div>
         </div>
         </div>
     </div>
+    <script src="script/catmssg-admin.js"></script>
     <script src="script/script.js"></script>
     <script src="script/bootstrap.min.js"></script>
 </body>

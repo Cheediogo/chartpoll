@@ -121,7 +121,7 @@ var categories =[
         numberOfPolls : 684
 
     }
-]
+];
 
 
     //    categories function
@@ -143,7 +143,7 @@ categories.forEach(e =>{
     `
     
     displayCategory.innerHTML = html;
-})
+});
 // datatable for search,pagination and info
 
 $(document).ready(function() {
@@ -193,6 +193,13 @@ $(document).ready(function() {
       });
 
     /*messages*/
-    $('.card-body').scrollTop(1000000);
+     $('.card-body').scrollTop(1000000);
 
+    function openChat() {
+        document.getElementById("myForm").style.display = "block";
+      }
+      
+      function closeChat() {
+        document.getElementById("myForm").style.display = "none";
+      }
 
